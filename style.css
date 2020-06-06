@@ -1,12 +1,79 @@
 /* <----header start----> */
 
+#preloader{
+background:white ;
+width: 100%;
+height: 100vh;
+position: fixed;
+
+z-index: 9999;
+
+}
+.gif-loader{
+    width: 40px;
+    height: 40px;
+}
+.loading-porsachi{
+    padding-top: 10px;
+    font-weight: bold;
+    font-size:x-large;
+    animation: text-changer 3s linear infinite;
+    color: rgb(7, 85, 94);
+}
+
+@keyframes text-changer{
+    25%{
+        color: rgb(214, 92, 26);
+    }
+    50%{
+        color: rgb(181, 52, 88);
+    }
+    100%{
+        color: rgb(0, 255, 0);
+    }
+}
+.abc{
+
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+.loader{
+
+    width:380px ;
+    text-align: center;
+}
+
+/* .logo-loader{
+    background:  url('images/Logo3.png')no-repeat;
+  padding: 0px;
+  background-position: center;
+  width: 472px;
+  height: 236px;
+    text-align: center;
+    animation: color-changer 3s linear infinite;
+}
+
+@keyframes color-changer{
+    25%{
+        background-image: url('images/Logo4.png');
+    }
+    50%{
+         background-image: url('images/Logo3.png');
+    }
+    100%{
+        background-image: url('images/Logo5.png');
+    }
+} */
+
 #heading , #headingp2{
     margin-top: 25px;
     margin-bottom: 25px;
 }
 h3{
     font-family: 'Acme', sans-serif;
-    /* font-family: 'Courgette', cursive; */
+
     font-weight: bold;
 }
 sub{
@@ -53,7 +120,6 @@ sub{
 
 
     /* <-----navbar start-----> */
-
 
  .nav-link{
      color: white!important;
@@ -110,7 +176,7 @@ sub{
 .btn{
     color:white;
     margin: 0px;
-    padding: 0px;
+    padding-left: 0px;
 }
 .btn-outline-success{
     color:white;
@@ -129,7 +195,7 @@ sub{
     padding: 0px;
 }
 .navbar-nav{
-    margin-right: -20px;
+    margin-right: -45px;
 }
 .collapse{
     border: none;
@@ -147,12 +213,21 @@ sub{
 	margin-top: 4px
     
 }
+@media (max-width:350px){
+.search{
+    margin-left: -20px;
+}
+.collapse{
+    margin-right: -20px;
+}
+
+}
     /* <-----navbar end-----> */
 
     /* <-----main section start-----> */
 
 .main{
-    background-image: url(images/main.jpg) ;
+    background-image: url(images/main2.jpg) ;
     background-size: cover ;
     position: relative;
     display: flex;
@@ -169,18 +244,18 @@ sub{
     opacity: 0.4;
 }
 
-@keyframes slide{
+/* @keyframes slide{
     0%{
-        background-image: url(images/main1.jpg);
+        background-image: url(images/bg5.jpg);
     }
     33%{
-        background-image: url(images/main2.jpg);
+        background-image: url(images/bg3.jpg);
     }
     67%{
-        background-image: url(images/main3.jpg);
+        background-image: url(images/bg4.jpg);
     }
     
-}
+} */
 marquee{
     background-color:rgb(87, 24, 69);
     color: white;
@@ -191,6 +266,9 @@ marquee{
     animation-delay: 0.5s;
     opacity: 0;
     
+}
+.marquee p{
+    display: inline-block;
 }
 @keyframes marquee {
     from {
@@ -228,8 +306,9 @@ marquee{
 @media (max-width:767px){
 .div{
     margin-top: 10px;
-    margin-left: -50px;
-    margin-right: -50px;
+    margin-left: -29px;
+    margin-right: -29px;
+    /* overflow: hidden; */
 }
 }
 .shopnow{
@@ -310,19 +389,373 @@ marquee{
     .info1{
         border-bottom: 1px solid black;
         border-right: 0px;
+        text-align: center;
     }
     .info2{
       border-bottom: 1px solid black;
       border-right: 0px;
+      text-align: center;
     }
     .info2{
         padding-top: 8px;
     }
     .info3{
         padding-top: 8px;
+        text-align: center;
+    }
+}
+
+    /* <-----main section end-----> */
+
+    /* <-----OUR PRODUCT START-----> */
+.mainheadings{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    background-color: white;
+    
+}
+ .heading{
+    text-align: center;
+    color: rgb(87, 24, 69);
+    position: relative;
+    
+}
+
+
+.heading::after{
+    content: '';
+    display: block;
+   width: 100px;
+    height: 2px;
+    background: rgb(87, 24, 69);
+    position: absolute;
+    left: -101px;
+    top: 50%;
+
+
+}
+.heading::before{
+    content: '';
+    display: block;
+   width:100px ;
+    height: 2px;
+    background: rgb(87, 24, 69);
+    position: absolute;
+    right: -101px;
+    top: 50%;
+   
+}
+.gallery{
+margin-top: 150px;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+grid-auto-rows: 300px 300px;
+grid-gap: 10px;
+grid-auto-flow: dense;
+/* background-color: rgb(87, 24, 69); */
+padding-top: 15px;
+}
+
+.gallery-items{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.gallery-items .image{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.gallery-items .image img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+   
+    object-position: 50% 50%;
+    transition: .5s ease-in-out;
+}
+.gallery-items:hover .image img{
+    transform: scale(1.5);
+}
+.gallery-items .opt{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size:25px;
+    -webkit-backdrop-filter: blur(5px) saturate(1.8);
+    backdrop-filter: blur(5px) saturate(1.8);
+    z-index: 4;
+    transition: .3s ease-in-out;
+    text-align: center;
+}
+.gallery-items:hover .opt{
+    opacity: 1;
+    padding: 25px;
+    width: 100%;
+    cursor: pointer;
+}
+.w-1{
+grid-column: span 1 ;
+}
+.w-2{
+    grid-column: span 2 ;
+}
+.w-3{
+    grid-column: span 3 ;
+}
+.w-4{
+    grid-column: span 4 ;
+}
+.h-1{
+grid-row: span 1;
+}
+.h-2{
+    grid-row: span 2 ;
+}
+.h-3{
+    grid-row: span 3 ;
+}
+.h-4{
+    grid-row: span 4 ;
+}
+@media screen and (max-width:576px){
+    .gallery{
+        display: block;
+    }
+    .gallery-container{
+        margin-top: 10px;
+        box-shadow: 4px 4px 6px grey;
+    }
+    .gallery{
+        background-color: white;
+    }
+    .gallery-items .image img {
+        height: 300px;
     }
 }
 
 
 
-    /* <-----main section end-----> */
+/* <-----OUR PRODUCT END-----> */
+
+/* <----DINNER SET START------> */
+.dinner-set{
+    margin-top: 45px;
+vertical-align: center;
+}
+.productcol{
+    background-color: lightgrey;
+    padding: 0px;
+}
+.productheading{
+    display: inline-block;
+    background-color: rgb(87, 24, 69);
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    color: white;
+    cursor: pointer;
+ 
+}
+.shopmore{
+    display: inline-block;
+    float:right;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-right: 10px;
+    color:rgb(87, 24, 69);
+    cursor: pointer;
+}
+.slider{
+    padding: 0px;
+}
+.card-slider{
+    padding: 0px;
+}
+.Quick-purchase{
+    color: rgb(87, 24, 69);
+    padding-top: 5px;
+    text-decoration: underline;
+}
+.card-body{
+    background-color: rgb(87, 24, 69);
+    color: white;
+    text-align: center;
+}
+.btn{
+    background-color: rgb(144, 12, 62);
+    padding:2px 5px;  
+    margin-left:-3px;
+    margin-right:-3px;
+    border-radius: 0px;
+}
+.fa-heart , .fa-shopping-cart {
+    height: 30px;
+    width: 30px;
+    color:white;
+}
+.heart , .cart{
+    opacity: 1;
+  
+    margin: 0px;
+    padding-bottom: 6px;
+    padding-top: 1px;
+}
+.fa-heart:hover , .fa-shopping-cart:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.btn:hover {
+    transform: scale(1.05);
+    color: white!important;
+    animation: zoom;
+    animation-duration:0.5s;
+    animation-fill-mode: both;
+}
+.img-din , .img-dec , .img-mug , .img-kitware ,.img-homeappliances{
+    width: 300px;
+    height: 470px;
+}
+
+/* <----DINNER SET END------> */
+  /* <--------DECORATION ITEM START------> */
+.decoration-items{
+    margin-top: 45px;
+}
+.card img{
+    width: 286px;
+    height: 200px;
+}
+@media(max-width:575px){
+.productheading{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.productheading a h3{
+    font-weight: lighter;
+}
+.shopmore{
+    margin-right: 0px;
+
+}
+}
+
+@media(max-width:360px){
+    .shopmore{
+        display: block;
+        float: none;
+    }
+    .productcol{
+        text-align: center;
+    }
+    .productheading{
+        display: block;
+    }
+}
+
+
+  /* <--------DECORATION ITEM END------> */
+  
+  /* <----mugs start-----. */
+.mug-set{
+    margin-top: 45px;
+}
+  /* <-------mugs end--------> */
+
+  /* <-----------kitchenware start---------> */
+
+.kitchen-ware{
+    margin-top: 45px;
+}
+
+  /* <-----------kichen ware end---------------> */
+   /* <------home appliancses start----. */
+.home-appliances{
+    margin-top: 45px;
+}
+   /* <------home appliancses end----. */
+
+   /* <-------footer start--------> */
+.footer{
+    background-color: rgb(87, 24, 69);
+    margin-top: 70px;
+}
+.foot-container{
+    background-color: rgb(87, 24, 69);
+    color: white;
+}
+.about , .customerservice{
+    display: inline-block;
+}
+.about-ul , .customerservice-ul , .sellonporsachi-ul ,.payment-ul{
+
+    list-style: none;
+    padding: 0px;
+}
+.footer-row{
+    padding-top: 75px;
+    padding-bottom: 75px;
+    color: white;
+}
+.col-md-6 div h4{
+    font-family: 'Acme', sans-serif;
+}
+.payment-ul li , .about-ul li , .customerservice-ul li{
+    padding: 5px;
+}
+.payment-ul li:hover , .about-ul li a:hover , .customerservice-ul li a:hover{
+color: rgb(144, 12, 62);
+}
+.end-row{
+    
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.footer-log{
+    margin-top: 30px;
+    background-color: rosybrown;
+}
+@media(max-width:575px){
+    .footer{
+     text-align: center; 
+    }
+    .footer-row{
+        padding-top: 30px;
+    }
+    .footer-logo{
+        margin-top:-10px;
+    }
+    .payment-col , .links-col, .about-col , .customerservice-Col{
+        margin-top: 20px;
+    }
+}
+    /* <-------footer end--------> */
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

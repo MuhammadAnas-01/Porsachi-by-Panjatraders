@@ -15,10 +15,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- googlefonts -->
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <!-- light slider -->
+    <link type="text/css" rel="stylesheet" href="lightslider.css" />
+    <script type="text/javascript" src="JQuery3.3.1.js"></script>
+    <script type="text/javascript" src="lightslider.js"></script>
+
+
     <title>Porsachi</title>
 </head>
 
-<body>
+<body onload="myfunction()" >
+
+    <div id="preloader">
+        <div class="container abc " style="text-align: center;">
+            <div class="row">
+                <!-- <div class="logo-loader  col-12">
+                </div> -->
+                <div class="loading-porsachi  col-12">
+                    <i>Loading Porsachi...</i><img class="gif-loader" src="images/loader.gif" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- header -->
 
@@ -39,18 +58,17 @@
                             <li><a class="links"><i class="fa fa-youtube"></i></a></li>
                         </ul>
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
-    <section>
+    <section style="position: sticky;top: 0; z-index: 1000;">
         <!-- header end -->
 
         <!-- navbar section start -->
-        <div class="container-fluid img-fluid" style="background-color: rgb(87, 24, 69);">
+        <div class="container-fluid " style="background-color: rgb(87, 24, 69);">
             <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light" style="position: -webkit-sticky;">
+                <nav class="navbar navbar-expand-lg navbar-light">
                     <div style="width: fit-content;margin-left:-15px">
                         <form class="form-inline my-2 my-lg-0">
                             <input class="mr-sm-2 search" type="search" placeholder="Search" aria-label="Search">
@@ -64,7 +82,7 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar top-bar"></span>
                         <span class="icon-bar middle-bar"></span>
-                        <span class="icon-bar bottom-bar"></span>	
+                        <span class="icon-bar bottom-bar"></span>
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -73,7 +91,7 @@
                                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                <a class="nav-link" href="DinnerSet/DinnerSet.html" id="navbarDropdown" role="button"
                                     aria-haspopup="true" aria-expanded="false">
                                     Dinner Set <i class="fa fa-angle-down"></i>
                                 </a>
@@ -84,8 +102,8 @@
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link" href="Mugs/mugs.html" id="navbarDropdown" role="button"
+                                     aria-haspopup="true" aria-expanded="false">
                                     Mugs <i class="fa fa-angle-down"></i>
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -97,12 +115,12 @@
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                <a class="nav-link" href="decoration items/decoration.html" id="navbarDropdown" role="button" 
                                     aria-haspopup="true" aria-expanded="false">
                                     Decoration Items <i class="fa fa-angle-down"></i>
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Glass Decoration</a>
+                                    <a class="dropdown-item" href="#">Decoration Lamps</a>
                                     <a class="dropdown-item" href="#">Porcelain Decoration Items</a>
                                 </div>
                             </li>
@@ -146,63 +164,1120 @@
 
     <!-- main section start -->
     <div class="container-fluid main ">
-        <div class="container" style="z-index: 9999;">
+        <div class="container " style="z-index: 9999;">
             <div class="div">
                 <marquee class="img-fluid" width="1200px" height="25px" direction="left" onmouseover="this.stop()"
                     onmouseout="this.start()">
-                    Porsachi offers you high quality items, you can buy here from crockery to home appliances !!!
+                    <span>Lets make your home vibe differently with your trust</span><span> and our high quality
+                        crockery to home appliances. Order Now</span>
                 </marquee>
             </div>
             <div class="logo">
-                <img class="img-fluid" src="images/logo2.png" width="400px" height="400px" >
+                <img class="img-fluid" src="images/logo2.png" width="400px" height="400px">
             </div>
             <div class="shopnow">
                 <a href="#">Shop Now</a>
             </div>
             <div class="row inforow">
-                <div class="col-md-4 info info1" >
+                <div class="col-md-4 info info1">
                     <div>
-                   <h6>The creation tool your home needs</h6>
-                   
-                   </div>
+                        <h6>The creation tool your home needs</h6>
+
+                    </div>
                 </div>
-                <div class="col-md-4 info info2" >
+                <div class="col-md-4 info info2">
                     <div>
-                   <h6>
-                    Our mission is about helping people decorate their homes with our products and services.</h6>
-                   </div>
+                        <h6>
+                            Our mission is about helping people decorate their homes with our products and services.
+                        </h6>
+                    </div>
                 </div>
-                <div class="col-md-4 info info3" >
+                <div class="col-md-4 info info3">
                     <div>
-                   <h6>Exalt your living with our products</h6>
-                  
-                   </div>
+                        <h6>Exalt your living with our products</h6>
+
+                    </div>
                 </div>
             </div>
         </div>
         <div class="overlay"></div>
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- main section end -->
 
 
+    <!--OUR PRODUCT START----->
+    <div class="container mt-5">
+        <div class="mainheadings">
+            <div class="heading">
+                <h2>OUR PRODUCTS</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container gallery img-fluid mt-2" style="padding:10px;">
+        <div class=" gallery-container w-2">
+            <div class="gallery-items">
+                <div class="image">
+                    <img class="img-fluid" src="images/gallery/Dinnerset.jpg" alt="">
+                </div>
+                <div class="opt">
+                    <a href="Dinnerset/DinnerSet.html" style="color: white;">
+                        <h3><i>DINNER-SET</i></h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-container">
+            <div class="gallery-items">
+                <div class="image">
+                    <img class="img-fluid" src="images/gallery/decoration.jpg" alt="">
+                </div>
+                <div class="opt">
+                    <a  href="decoration items/decoration.html" style="color: white;">
+                        <h3><i>DECORATION-ITEMS</i></h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-container ">
+            <div class="gallery-items">
+                <div class="image">
+                    <img class="img-fluid" src="images/homeappliances/juicer/juicer1.jpg" alt="">
+                </div>
+                <div class="opt">
+                    <a>
+                        <h3><i>HOME APPLIANCES</i></h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-container w-3 ">
+            <div class="gallery-items">
+                <div class="image">
+                    <img class="img-fluid" src="images/gallery/kitchenware.jpg" alt="">
+                </div>
+                <div class="opt">
+                    <a>
+                        <h3><i>KITCHEN-WARE</i></h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-container ">
+            <div class="gallery-items">
+                <div class="image">
+                    <img class="img-fluid" src="images/gallery/mugs.jpeg" alt="">
+                </div>
+                <div class="opt">
+                    <a href="mugs/mugs.html" style="color: white;">
+                        <h3><i>MUGS</i></h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-container ">
+            <div class="gallery-items">
+                <div class="image">
+                    <img class="img-fluid" src="images/gallery/mugs2.jpg" alt="">
+                </div>
+                <div class="opt">
+                    <a href="mugs/mugs.html" style="color: white;">
+                        <h3><i>MUGS</i></h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-container ">
+            <div class="gallery-items">
+                <div class="image">
+                    <img class="img-fluid" src="images/gallery/decoration2.jpg" alt="">
+                </div>
+                <div class="opt">
+                    <a href="decoration items/decoration.html" style="color: white;">
+                        <h3><i>DECORATION-ITEMS</i></h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-container w-2 ">
+            <div class="gallery-items">
+                <div class="image">
+                    <img class="img-fluid" src="images/gallery/Dinnerset2.jpg" alt="">
+                </div>
+                <div class="opt">
+                    <a href="dinnerset/DinnerSet.html" style="color: white;">
+                        <h3><i>DINNER-SET</i></h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--OUR PRODUCTS END----->
+    <div class="container mt-5">
+        <div class="mainheadings">
+            <div class="heading">
+                <h2>FEATURED PRODUCTS</h2>
+            </div>
+        </div>
+    </div>
+    <!-- DINNER SET START -->
+    <div class="container dinner-set ">
+        <div class="row">
+            <div class="col productcol">
+                <div class="productheading">
+                    <a href="dinnerset/DinnerSet.html" style="color: white;">
+                        <h3>DINNER-SET</h3>
+                    </a>
+                </div>
+                <div class="shopmore">
+                    <a href="Dinnerset/DinnerSet.html" style="color: rgb(87, 24, 69);"> Shop more &nbsp;<i class="fa fa-shopping-cart" style="color: rgb(87, 24, 69);"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 slider">
+                <div id="carouselExampleCaptions" class="carousel slide " data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/dinnerset/Newbonechina61pcs/newbonechina1.jpg"
+                                class="d-block w-100 img-din " alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/dinnerset/Newbonechina61pcs/newbonechina2.jpg"
+                                class="d-block w-100 img-din" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/dinnerset/Newbonechina61pcs/newbonechina3.jpg"
+                                class="d-block w-100 img-din" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 card-div">
+                <div class="Quick-purchase">
+                    <h5>Quick Purchase</h5>
+                </div>
+                <div class="card-slider">
+                    <ul id="autoWidth" class="cs-hidden">
+                        <li class="item-a">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/dinnerset/Newbonechina61pcs/newbonechina4.jpg" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dinner-Set|NewBoneChina</h5>
+                                    <p class="card-text">
+                                        <span>Details</span><br>
+                                        <span>61pcs Dinner Set by Porsachi</span><br>
+                                        <span>Price: ???</span>
+
+                                    </p>
+                                    <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                                        CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/dinnerset/Newbonechina61pcs/newbonechina2.jpg" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dinner-Set|NewBoneChina</h5>
+                                    <p class="card-text">
+                                        <span>Details</span><br>
+                                        <span>61pcs Dinner Set by Porsachi</span><br>
+                                        <span>Price: ???</span>
+
+                                    </p>
+                                    <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                                        CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/dinnerset/Newbonechina61pcs/newbonechina3.jpg" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dinner-Set|NewBoneChina</h5>
+                                    <p class="card-text">
+                                        <span>Details</span><br>
+                                        <span>61pcs Dinner Set by Porsachi</span><br>
+                                        <span>Price: ???</span>
+
+                                    </p>
+                                    <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                                        CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/dinnerset/Newbonechina61pcs/newbonechina4.jpg" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dinner-Set|NewBoneChina</h5>
+                                    <p class="card-text">
+                                        <span>Details</span><br>
+                                        <span>61pcs Dinner Set by Porsachi</span><br>
+                                        <span>Price: ???</span>
+
+                                    </p>
+                                    <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                                        CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/dinnerset/porcelain75pcs/porcelain1.jpg" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dinner-Set|Porcelain</h5>
+                                    <p class="card-text">
+                                        <span>Details</span><br>
+                                        <span>71pcs Dinner Set by Porsachi</span><br>
+                                        <span>Price: ???</span>
+
+                                    </p>
+                                    <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                                        CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/dinnerset/porcelain75pcs/porcelain2.jpg" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dinner-Set|Porcelain</h5>
+                                    <p class="card-text">
+                                        <span>Details</span><br>
+                                        <span>71pcs Dinner Set by Porsachi</span><br>
+                                        <span>Price: ???</span>
+
+                                    </p>
+                                    <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                                        CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <script>
+                    $(document).ready(function () {
+                        $('#autoWidth').lightSlider({
+                            autoWidth: true,
+                            loop: true,
+                            onSliderLoad: function () {
+                                $('#autoWidth').removeClass('cS-hidden');
+                            }
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <!--DINNER SET END -->
+
+    <!-- DECORATION ITEM START -->
+
+
+
+    <div class="container decoration-items">
+        <div class="row">
+            <div class="col productcol">
+                <div class="productheading">
+                    <a href="decoration items/decoration.html" style="color: white;">
+                        <h3>DECORATION-ITEMS</h3>
+                    </a>
+                </div>
+                <div class="shopmore">
+                    <a href="decoration items/decoration.html"  style="color: rgb(87, 24, 69);"> Shop more &nbsp;<i class="fa fa-shopping-cart" style="color: rgb(87, 24, 69);"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 slider">
+
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/Decorationitems/decor5.jpg" class="d-block w-100 img-dec" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Decorationitems/decor8.jpg" class="d-block w-100 img-dec" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Decorationitems/decor7.jpg" class="d-block w-100 img-dec" alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="Quick-purchase">
+                    <h5>Quick Purchase</h5>
+                </div>
+                <div class="card-slider">
+                    <ul id="decor" class="cs-hidden">
+                        <li class="item-a">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/Decorationitems/decor1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dinner-Set|NewBoneChina</h5>
+                                    <p class="card-text">
+                                        <span>Details</span><br>
+                                        <span>61pcs Dinner Set by Porsachi</span><br>
+                                        <span>Price: ???</span>
+
+                                    </p>
+                                    <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                                        CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/Decorationitems/decor2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dinner-Set|NewBoneChina</h5>
+                                    <p class="card-text">
+                                        <span>Details</span><br>
+                                        <span>61pcs Dinner Set by Porsachi</span><br>
+                                        <span>Price: ???</span>
+
+                                    </p>
+                                    <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                                        CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/Decorationitems/decor3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dinner-Set|NewBoneChina</h5>
+                                    <p class="card-text">
+                                        <span>Details</span><br>
+                                        <span>61pcs Dinner Set by Porsachi</span><br>
+                                        <span>Price: ???</span>
+
+                                    </p>
+                                    <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                                        CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/Decorationitems/decor4.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dinner-Set|NewBoneChina</h5>
+                                    <p class="card-text">
+                                        <span>Details</span><br>
+                                        <span>61pcs Dinner Set by Porsachi</span><br>
+                                        <span>Price: ???</span>
+
+                                    </p>
+                                    <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                                        CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/Decorationitems/decor5.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dinner-Set|Porcelain</h5>
+                                    <p class="card-text">
+                                        <span>Details</span><br>
+                                        <span>71pcs Dinner Set by Porsachi</span><br>
+                                        <span>Price: ???</span>
+
+                                    </p>
+                                    <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                                        CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/Decorationitems/decor6.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dinner-Set|Porcelain</h5>
+                                    <p class="card-text">
+                                        <span>Details</span><br>
+                                        <span>71pcs Dinner Set by Porsachi</span><br>
+                                        <span>Price: ???</span>
+
+                                    </p>
+                                    <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                                        CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <script>
+                    $(document).ready(function () {
+                        $('#decor').lightSlider({
+                            autoWidth: true,
+                            loop: true,
+                            onSliderLoad: function () {
+                                $('#decor').removeClass('cS-hidden');
+                            }
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- DECORATION ITEM END -->
+
+    <!-- MUGS START -->
+
+    <div class="container mug-set">
+        <div class="row">
+            <div class="col productcol">
+                <div class="productheading">
+                    <a href="mugs/mugs.html" style="color: white;">
+                        <h3>MUGS</h3>
+                    </a>
+                </div>
+                <div class="shopmore">
+                    <a href="mugs/mugs.html"  style="color: rgb(87, 24, 69);"> Shop more &nbsp;<i class="fa fa-shopping-cart" style="color: rgb(87, 24, 69);"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 slider">
+                <div id="carouselExampleInterval" class="carousel slide " data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="10000">
+                            <img src="images/mugs/porcelainMug/porcelainmug1.jpg" class="d-block w-100 img-mug"
+                                alt="...">
+                        </div>
+                        <div class="carousel-item" data-interval="2000">
+                            <img src="images/mugs/porcelainMug/porcelainmug2.jpg" class="d-block w-100 img-mug"
+                                alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/mugs/porcelainMug/porcelainmug3.jpg" class="d-block w-100 img-mug"
+                                alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="Quick-purchase">
+                    <h5>Quick Purchase</h5>
+                </div>
+                <div class="card-slider">
+                    <ul id="mugs" class="cs-hidden">
+                        <li class="item-a">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/mugs/porcelainMug/porcelainmug4.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dinner-Set|NewBoneChina</h5>
+                                    <p class="card-text">
+                                        <span>Details</span><br>
+                                        <span>61pcs Dinner Set by Porsachi</span><br>
+                                        <span>Price: ???</span>
+
+                                    </p>
+                                    <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                                        CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/mugs/porcelainMug/porcelainmug5.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dinner-Set|NewBoneChina</h5>
+                                    <p class="card-text">
+                                        <span>Details</span><br>
+                                        <span>61pcs Dinner Set by Porsachi</span><br>
+                                        <span>Price: ???</span>
+
+                                    </p>
+                                    <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                                        CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/mugs/porcelainMug/porcelainmug6.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dinner-Set|NewBoneChina</h5>
+                                    <p class="card-text">
+                                        <span>Details</span><br>
+                                        <span>61pcs Dinner Set by Porsachi</span><br>
+                                        <span>Price: ???</span>
+
+                                    </p>
+                                    <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                                        CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/mugs/porcelainMug/porcelainmug7.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dinner-Set|NewBoneChina</h5>
+                                    <p class="card-text">
+                                        <span>Details</span><br>
+                                        <span>61pcs Dinner Set by Porsachi</span><br>
+                                        <span>Price: ???</span>
+
+                                    </p>
+                                    <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                                        CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/mugs/porcelainMug/porcelainmug8.jpg " class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dinner-Set|Porcelain</h5>
+                                    <p class="card-text">
+                                        <span>Details</span><br>
+                                        <span>71pcs Dinner Set by Porsachi</span><br>
+                                        <span>Price: ???</span>
+
+                                    </p>
+                                    <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                                        CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/mugs/porcelainMug/porcelainmug1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dinner-Set|Porcelain</h5>
+                                    <p class="card-text">
+                                        <span>Details</span><br>
+                                        <span>71pcs Dinner Set by Porsachi</span><br>
+                                        <span>Price: ???</span>
+
+                                    </p>
+                                    <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                                        CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/mugs/porcelainMug/porcelainmug2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dinner-Set|Porcelain</h5>
+                                    <p class="card-text">
+                                        <span>Details</span><br>
+                                        <span>71pcs Dinner Set by Porsachi</span><br>
+                                        <span>Price: ???</span>
+
+                                    </p>
+                                    <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                                        CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <script>
+                    $(document).ready(function () {
+                        $('#mugs').lightSlider({
+                            autoWidth: true,
+                            loop: true,
+                            onSliderLoad: function () {
+                                $('#mugs').removeClass('cS-hidden');
+                            }
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+    <!-- MUGS END -->
+
+
+    <!-- kitchenware start -->
+
+    <div class="container kitchen-ware">
+
+        <div class="row">
+            <div class="col productcol">
+                <div class="productheading">
+                    <a>
+                        <h3>KITCHEN-WARE</h3>
+                    </a>
+                </div>
+                <div class="shopmore">
+                    <a> Shop more &nbsp;<i class="fa fa-shopping-cart" style="color: rgb(87, 24, 69);"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-8 slider">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/Kitchenware/cuttleryset/cuttleryset1.jpg" class="d-block w-100 img-kitware"
+                                alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Kitchenware/fokrset/forkset1.jpg" class="d-block w-100 img-kitware"
+                                alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Kitchenware/spoonset/spoonset2.jpg" class="d-block w-100 img-kitware"
+                                alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="Quick-purchase">
+                    <h5>Quick Purchase</h5>
+                </div>
+                <div class="card-slider">
+                    <ul id="kitware" class="cs-hidden">
+                        <li class="item-a">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/Kitchenware/cuttleryset/cuttleryset1.jpg" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dinner-Set|NewBoneChina</h5>
+                                    <p class="card-text">
+                                        <span>Details</span><br>
+                                        <span>61pcs Dinner Set by Porsachi</span><br>
+                                        <span>Price: ???</span>
+
+                                    </p>
+                                    <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                                        CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/Kitchenware/fokrset/forkset1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dinner-Set|NewBoneChina</h5>
+                                    <p class="card-text">
+                                        <span>Details</span><br>
+                                        <span>61pcs Dinner Set by Porsachi</span><br>
+                                        <span>Price: ???</span>
+
+                                    </p>
+                                    <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                                        CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/Kitchenware/knifeset/knifeset1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dinner-Set|NewBoneChina</h5>
+                                    <p class="card-text">
+                                        <span>Details</span><br>
+                                        <span>61pcs Dinner Set by Porsachi</span><br>
+                                        <span>Price: ???</span>
+
+                                    </p>
+                                    <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                                        CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/Kitchenware/spoonset/spoonset1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dinner-Set|NewBoneChina</h5>
+                                    <p class="card-text">
+                                        <span>Details</span><br>
+                                        <span>61pcs Dinner Set by Porsachi</span><br>
+                                        <span>Price: ???</span>
+
+                                    </p>
+                                    <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                                        CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/Kitchenware/spoonset/spoonset2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dinner-Set|Porcelain</h5>
+                                    <p class="card-text">
+                                        <span>Details</span><br>
+                                        <span>71pcs Dinner Set by Porsachi</span><br>
+                                        <span>Price: ???</span>
+
+                                    </p>
+                                    <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                                        CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/Kitchenware/cuttleryset/cuttleryset2.jpg" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dinner-Set|Porcelain</h5>
+                                    <p class="card-text">
+                                        <span>Details</span><br>
+                                        <span>71pcs Dinner Set by Porsachi</span><br>
+                                        <span>Price: ???</span>
+
+                                    </p>
+                                    <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                                        CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <script>
+                    $(document).ready(function () {
+                        $('#kitware').lightSlider({
+                            autoWidth: true,
+                            loop: true,
+                            onSliderLoad: function () {
+                                $('#kitware').removeClass('cS-hidden');
+                            }
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+    <!-- kitchenware end -->
+
+    <!-- <---------home appliances start----->
+
+    <div class="container home-appliances">
+        <div class="row">
+            <div class="col productcol">
+                <div class="productheading">
+                    <a>
+                        <h3>HOME-APPLIANCES</h3>
+                    </a>
+                </div>
+                <div class="shopmore">
+                    <a> Shop more &nbsp;<i class="fa fa-shopping-cart" style="color: rgb(87, 24, 69);"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 slider">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/homeappliances/vacumcleaner/cleaner1.jpg"
+                                class="d-block w-100 img-homeappliances" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/homeappliances/microwave/microwave1.jpg"
+                                class="d-block w-100 img-homeappliances " alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/homeappliances/juicer/juicer1.jpg" class="d-block w-100 img-homeappliances"
+                                alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="Quick-purchase">
+                    <h5>Quick Purchase</h5>
+                </div>
+                <div class="card-slider">
+                    <ul id="homappl" class="cs-hidden">
+                        <li class="item-a">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/homeappliances/clothdryer/dryer1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dinner-Set|NewBoneChina</h5>
+                                    <p class="card-text">
+                                        <span>Details</span><br>
+                                        <span>61pcs Dinner Set by Porsachi</span><br>
+                                        <span>Price: ???</span>
+
+                                    </p>
+                                    <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                                        CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-b">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/homeappliances/juicer/juicer1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dinner-Set|NewBoneChina</h5>
+                                    <p class="card-text">
+                                        <span>Details</span><br>
+                                        <span>61pcs Dinner Set by Porsachi</span><br>
+                                        <span>Price: ???</span>
+
+                                    </p>
+                                    <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                                        CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-c">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/homeappliances/microwave/microwave1.jpg" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dinner-Set|NewBoneChina</h5>
+                                    <p class="card-text">
+                                        <span>Details</span><br>
+                                        <span>61pcs Dinner Set by Porsachi</span><br>
+                                        <span>Price: ???</span>
+
+                                    </p>
+                                    <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                                        CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                        </li>
+                        <li class="item-d">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/homeappliances/mixer/mixer1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dinner-Set|NewBoneChina</h5>
+                                    <p class="card-text">
+                                        <span>Details</span><br>
+                                        <span>61pcs Dinner Set by Porsachi</span><br>
+                                        <span>Price: ???</span>
+
+                                    </p>
+                                    <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                                        CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-e">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/homeappliances/vacumcleaner/cleaner1.jpg " class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dinner-Set|Porcelain</h5>
+                                    <p class="card-text">
+                                        <span>Details</span><br>
+                                        <span>71pcs Dinner Set by Porsachi</span><br>
+                                        <span>Price: ???</span>
+
+                                    </p>
+                                    <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                                        CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <script>
+                    $(document).ready(function () {
+                        $('#homappl').lightSlider({
+                            autoWidth: true,
+                            loop: true,
+                            onSliderLoad: function () {
+                                $('#homappl').removeClass('cS-hidden');
+                            }
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <!-- <---------home appliances end----->
+
+    <!-- foooter start -->
+    <div class="container-fluid footer">
+
+        <div class="row footer-row">
+            <div class="col-md-4">
+                <div class="footer-logo">
+                    <img class="img-fluid" src="images/logo2.png" width="400px" height="250px">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="row ">
+                    <div class="col-md-6 payment-col">
+                        <div style="padding-bottom: 15px;">
+                            <h4>Payment Options</h4>
+                        </div>
+                        <div>
+                            <ul class="payment-ul">
+                                <li>Cash on Delivery</li>
+                                <li>Bankb Transfer</li>
+                                <li>Card Payments</li>
+                                <li>EasyPaisa Mobile Account</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 links-col">
+                        <div style="padding-bottom: 15px;">
+                            <h4> Follow us</h4>
+                        </div>
+                        <div>
+                            <ul class="ul1">
+                                <li><a class="links" id="fb"><i class="fa fa-facebook"></i></a></li>
+                                <li><a class="links"><i class="fa fa-twitter"></i></a></li>
+                                <li><a class="links"><i class="fa fa-instagram"></i></a></li>
+                                <li><a class="links"><i class="fa fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 about-col">
+                        <div style="margin-top: 10px;margin-bottom: 15px;">
+                            <h4> About us</h4>
+                        </div>
+                        <div>
+                            <ul class="about-ul">
+                                <li><a>Careers</a></li>
+                                <li><a>Terms & Conditions</a></li>
+                                <li><a>Privacy agreement</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 customerservice-col">
+                        <div style="margin-top: 10px;margin-bottom: 15px;">
+                            <h4>Customer Service</h4>
+                        </div>
+                        <div>
+                            <ul class="customerservice-ul">
+                                <li><a>Contact us</a></li>
+                                <li><a>Refund policy</a></li>
+                                <li><a>Return policy</a></li>
+                                <li><a>Warranty policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row end-row">
+            <h6>&copy;2020 PORSACHI</h6></br>
+            <h6>All Rights Reserved</h6>
+        </div>
+    </div>
+
+    </div>
+
+    </div>
 
 
 
 
+    <!-- foooter end -->
+
+
+
+
+    <!-- <script>
+
+        var progress = document.getElementById('progress-bar');
+        var totalheight = document.body.scrollHeight - window.innerHeight;
+
+        window.onscroll = function(){
+            var progressheight = window.pageYOffset / totalheight *100;
+            progress.style.height = progressheight + "%";
+        }
+
+
+    </script> -->
+
+
+<script>
+    var loader = document.getElementById('preloader');
+    function myfunction(){
+        loader.style.display ='none';
+    }
+</script>
 
 
 
@@ -216,15 +1291,20 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+
+
+
+
+
 </body>
 
 </html>

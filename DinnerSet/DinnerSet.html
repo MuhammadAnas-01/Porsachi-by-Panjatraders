@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Stle.css -->
+    <link rel="stylesheet" href="DinnerSet.css">
+    <link rel="stylesheet" href="../style.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- googlefonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <!-- light slider -->
+    <link type="text/css" rel="stylesheet" href="lightslider.css" />
+    <script type="text/javascript" src="../JQuery3.3.1.js"></script>
+    <script type="text/javascript" src="../lightslider.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body class="img-fluid" onload="myfunction()">
+    <div id="preloader">
+        <div class="container abc " style="text-align: center;">
+            <div class="row">
+                <!-- <div class="logo-loader  col-12">
+                </div> -->
+                <div class="loading-porsachi  col-12">
+                    <i>Loading Dinner-Set...</i><img class="gif-loader" src="../images/loader.gif" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- header -->
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="heading">
+                        <h3>PORSACHI<sub>By Panjatraders</sub></h3>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="headingp2">
+                        <ul class="ul1">
+                            <li><a class="links" id="fb"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="links"><i class="fa fa-twitter"></i></a></li>
+                            <li><a class="links"><i class="fa fa-instagram"></i></a></li>
+                            <li><a class="links"><i class="fa fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="position: sticky;top: 0; z-index: 1000;">
+        <!-- header end -->
+
+        <!-- navbar section start -->
+        <div class="container-fluid img-fluid" style="background-color: rgb(87, 24, 69);">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light" style="position: -webkit-sticky;">
+                    <div style="width: fit-content;margin-left:-15px">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="mr-sm-2 search" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline my-2 my-sm-0" type="submit"><i
+                                    class="fa fa-search"></i></button>
+
+                        </form>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto  ">
+                            <li class="nav-item  ">
+                                <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item dropdowna active ">
+                                <a class="nav-link" href="#" id="navbarDropdown" role="button"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Dinner Set <i class="fa fa-angle-down"></i>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Bone China</a>
+                                    <a class="dropdown-item" href="#">Porcelain</a>
+                                    <a class="dropdown-item" href="#">Plastic</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="../Mugs/mugs.html" id="navbarDropdown" role="button"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Mugs <i class="fa fa-angle-down"></i>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Bone Mug</a>
+                                    <a class="dropdown-item" href="#">Porcelain Mug</a>
+                                    <a class="dropdown-item" href="#">Decoration Mug</a>
+                                    <a class="dropdown-item" href="#">Suplication Mug</a>
+                                    <a class="dropdown-item" href="#">Tea/Coffe Mug</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="../decoration items/decoration.html" id="navbarDropdown" role="button" 
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Decoration Items <i class="fa fa-angle-down"></i>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Decoration Lamps</a>
+                                    <a class="dropdown-item" href="#">Porcelain Decoration Items</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Kitchen ware <i class="fa fa-angle-down"></i>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">cuttlery</a>
+                                    <a class="dropdown-item" href="#">knife Set</a>
+                                    <a class="dropdown-item" href="#">Spoon Set</a>
+                                    <a class="dropdown-item" href="#">Fork Set</a>
+                                    <a class="dropdown-item" href="#">Brief Cases</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Home Appliances <i class="fa fa-angle-down"></i>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Juicer Blender</a>
+                                    <a class="dropdown-item" href="#">Microwave</a>
+                                    <a class="dropdown-item" href="#">Mixer</a>
+                                    <a class="dropdown-item" href="#">Cloth dryer</a>
+                                    <a class="dropdown-item" href="#">Vacum cleaner</a>
+                                    <a class="dropdown-item" href="#">Other Items</a>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- navbar section end -->
+    <!-- navigaor start -->
+    <div class="container navigator">
+        <span><a href="../index.html">Home</a></span>
+        <span><i class="fa fa-angle-right"></i></span>
+        <span><a href="#">Dinner Set</a></span>
+    </div>
+    <!-- navigator end  -->
+
+    <div class="container img-fluid">
+        <div class="row">
+            <!-- categories div start  -->
+            <div class="col-md-3 categories">
+                <div class="head-categ">Categories</div>
+                <div class="parts-categ"><a>Bone china</a></div>
+                <div class="parts-categ"><a>New Bone China</a></div>
+                <div class="parts-categ"><a>Porcelain ware</a></div>
+
+                <div style="margin-top: 50px;">
+                    <div class="comment-head">
+                        Comments
+                    </div>
+                    <div>
+                        <marquee class="comment-section" direction="up" onmouseover="this.stop()"
+                        onmouseout="this.start()" scrollamount="3" height="300px">
+                    Adam : prices are resonable , its pretty good <br>
+                    <br>
+                    Ali : Satified with the product <br>
+                    <br>
+                    Sufyan : Amaizing and prducts and Services <br>
+                    <br>
+                    Bilal : Designs are really cool <br>
+                    <br>
+                    Langford : Looking forward to by more products<br>
+                    <br>
+                    Adam : prices are resonable , its pretty good <br>
+                    <br>
+                    Ali : Satified with the product <br>
+                    <br>
+                    Sufyan : Amaizing and prducts and Services <br>
+                    <br>
+                    Bilal : Designs are really cool <br>
+                    <br>
+                    Langford : Looking forward to by more products
+                    </marquee>
+                    </div>
+                </div>
+            </div>
+
+            <!-- categories div end  -->
+            <!-- main imagaes start  -->
+
+            <div class="col-md-9 Main-images">
+                <div class="gallery-dinner-main-2">
+                    <div class=" gallery-container-2 ">
+                        <div class="gallery-items-2">
+                            <div class="image-2">
+                                <img class="img-fluid" src="../images/dinnerset/Newbonechina61pcs/newbonechina1.jpg"
+                                    alt="">
+                            </div>
+                            <div class="opt-2">
+                                <a>
+                                    <h3><i>NEW BONE CHINA</i></h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" gallery-container-2">
+                        <div class="gallery-items-2">
+                            <div class="image-2">
+                                <img class="img-fluid" src="../images/dinnerset/porcelain75pcs/porcelain1.jpg" alt="">
+                            </div>
+                            <div class="opt-2">
+                                <a>
+                                    <h3><i>PORCELAIN</i></h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" gallery-container-2 w-2">
+                        <div class="gallery-items-2">
+                            <div class="image-2">
+                                <img class="img-fluid" src="../images/dinnerset/Bonechina61pcs/bonechina1.jpg" alt="">
+                            </div>
+                            <div class="opt-2">
+                                <a>
+                                    <h3><i>BONE CHINA</i></h3>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <!-- main images end  -->
+        </div>
+    </div>
+    <div class="container new-bone-china">
+        <div class="row">
+         
+            <div class="col productcol">
+                <div class="productheading">
+                    <a>
+                        <h3>NEW BONE CHINA</h3>
+                    </a>
+                </div>
+                <div class="shopmore">
+                    <a> Shop more &nbsp;<i class="fa fa-shopping-cart" style="color: rgb(87, 24, 69);"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid ">
+        <div class="card-wrapper row" style="text-align: center;">
+            <div>
+            <a>
+                <div class="card-own">
+                    <div class="card-image">
+                        <img class="img-fluid" src="../images/dinnerset/Newbonechina61pcs/newbonechina1.jpg" alt="">
+                    </div>
+                    <div class="card-own-title">
+                        <span>NEW BONE CHINA</span><br>
+                        <span> Article no.01 <br>Price: Rs2000</span>
+                    </div>
+                    <div class="card-own-btn">
+                        <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                            CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="card-own">
+                    <div class="card-image">
+                        <img class="img-fluid" src="../images/dinnerset/Newbonechina61pcs/newbonechina2.jpg" alt="">
+                    </div>
+                    <div class="card-own-title">
+                        <span>NEW BONE CHINA</span><br>
+                        <span> Article no.02 <br>Price: Rs2000</span>
+                    </div>
+                    <div class="card-own-btn">
+                        <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                            CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="card-own">
+                    <div class="card-image">
+                        <img class="img-fluid" src="../images/dinnerset/Newbonechina61pcs/newbonechina3.jpg" alt="">
+                    </div>
+                    <div class="card-own-title">
+                        <span>NEW BONE CHINA</span><br>
+                        <span> Article no.03 <br>Price: Rs2000</span>
+                    </div>
+                    <div class="card-own-btn">
+                        <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                            CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="card-own">
+                    <div class="card-image">
+                        <img class="img-fluid" src="../images/dinnerset/Newbonechina61pcs/newbonechina4.jpg" alt="">
+                    </div>
+                    <div class="card-own-title">
+                        <span>NEW BONE CHINA</span><br>
+                        <span> Article no.04 <br>Price: Rs2000</span>
+                    </div>
+                    <div class="card-own-btn">
+                        <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                            CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="card-own">
+                    <div class="card-image">
+                        <img class="img-fluid" src="../images/dinnerset/Newbonechina61pcs/newbonechina5.jpg" alt="">
+                    </div>
+                    <div class="card-own-title">
+                        <span>NEW BONE CHINA</span><br>
+                        <span> Article no.05 <br>Price: Rs2000</span>
+                    </div>
+                    <div class="card-own-btn">
+                        <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                            CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="card-own">
+                    <div class="card-image">
+                        <img class="img-fluid" src="../images/dinnerset/Newbonechina61pcs/newbonechina6.jpg" alt="">
+                    </div>
+                    <div class="card-own-title">
+                        <span>NEW BONE CHINA</span><br>
+                        <span> Article no.06 <br>Price: Rs2000</span>
+                    </div>
+                    <div class="card-own-btn">
+                        <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                            CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="card-own">
+                    <div class="card-image">
+                        <img class="img-fluid" src="../images/dinnerset/Newbonechina61pcs/newbonechina7.jpg" alt="">
+                    </div>
+                    <div class="card-own-title">
+                        <span>NEW BONE CHINA</span><br>
+                        <span> Article no.07 <br>Price: Rs2000</span>
+                    </div>
+                    <div class="card-own-btn">
+                        <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                            CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="card-own">
+                    <div class="card-image">
+                        <img class="img-fluid" src="../images/dinnerset/Newbonechina61pcs/newbonechina8.jpg" alt="">
+                    </div>
+                    <div class="card-own-title">
+                        <span>NEW BONE CHINA</span><br>
+                        <span> Article no.08 <br>Price: Rs2000</span>
+                    </div>
+                    <div class="card-own-btn">
+                        <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                            CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="card-own">
+                    <div class="card-image">
+                        <img class="img-fluid" src="../images/dinnerset/Newbonechina61pcs/newbonechina1.jpg" alt="">
+                    </div>
+                    <div class="card-own-title">
+                        <span>NEW BONE CHINA</span><br>
+                        <span> Article no.09 <br>Price: Rs2000</span>
+                    </div>
+                    <div class="card-own-btn">
+                        <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                            CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="card-own">
+                    <div class="card-image">
+                        <img class="img-fluid" src="../images/dinnerset/Newbonechina61pcs/newbonechina2.jpg" alt="">
+                    </div>
+                    <div class="card-own-title">
+                        <span>NEW BONE CHINA</span><br>
+                        <span> Article no.10 <br>Price: Rs2000</span>
+                    </div>
+                    <div class="card-own-btn">
+                        <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                            CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container new-bone-china">
+        <div class="row">
+         
+            <div class="col productcol">
+                <div class="productheading">
+                    <a>
+                        <h3>PORCELAIN</h3>
+                    </a>
+                </div>
+                <div class="shopmore">
+                    <a> Shop more &nbsp;<i class="fa fa-shopping-cart" style="color: rgb(87, 24, 69);"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid " >
+        <div class="card-wrapper row" style="text-align: center;">
+            <div>
+            <a>
+                <div class="card-own">
+                    <div class="card-image">
+                        <img class="img-fluid" src="../images/dinnerset/porcelain75pcs/porcelain1.jpg" alt="">
+                    </div>
+                    <div class="card-own-title">
+                        <span>NEW BONE CHINA</span><br>
+                        <span> Article no.01 <br>Price: Rs2000</span>
+                    </div>
+                    <div class="card-own-btn">
+                        <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                            CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="card-own">
+                    <div class="card-image">
+                        <img class="img-fluid" src="../images/dinnerset/porcelain75pcs/porcelain2.jpg" alt="">
+                    </div>
+                    <div class="card-own-title">
+                        <span>NEW BONE CHINA</span><br>
+                        <span> Article no.02 <br>Price: Rs2000</span>
+                    </div>
+                    <div class="card-own-btn">
+                        <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                            CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="card-own">
+                    <div class="card-image">
+                        <img class="img-fluid" src="../images/dinnerset/porcelain75pcs/porcelain3.jpg" alt="">
+                    </div>
+                    <div class="card-own-title">
+                        <span>NEW BONE CHINA</span><br>
+                        <span> Article no.03 <br>Price: Rs2000</span>
+                    </div>
+                    <div class="card-own-btn">
+                        <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                            CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="card-own">
+                    <div class="card-image">
+                        <img class="img-fluid" src="../images/dinnerset/porcelain75pcs/porcelain4.jpg" alt="">
+                    </div>
+                    <div class="card-own-title">
+                        <span>NEW BONE CHINA</span><br>
+                        <span> Article no.04 <br>Price: Rs2000</span>
+                    </div>
+                    <div class="card-own-btn">
+                        <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                            CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="card-own">
+                    <div class="card-image">
+                        <img class="img-fluid" src="../images/dinnerset/porcelain75pcs/porcelain5.jpg" alt="">
+                    </div>
+                    <div class="card-own-title">
+                        <span>NEW BONE CHINA</span><br>
+                        <span> Article no.05 <br>Price: Rs2000</span>
+                    </div>
+                    <div class="card-own-btn">
+                        <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                            CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="card-own">
+                    <div class="card-image">
+                        <img class="img-fluid" src="../images/dinnerset/porcelain75pcs/porcelain6.jpg" alt="">
+                    </div>
+                    <div class="card-own-title">
+                        <span>NEW BONE CHINA</span><br>
+                        <span> Article no.06 <br>Price: Rs2000</span>
+                    </div>
+                    <div class="card-own-btn">
+                        <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                            CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="card-own">
+                    <div class="card-image">
+                        <img class="img-fluid" src="../images/dinnerset/porcelain75pcs/porcelain1.jpg" alt="">
+                    </div>
+                    <div class="card-own-title">
+                        <span>NEW BONE CHINA</span><br>
+                        <span> Article no.07 <br>Price: Rs2000</span>
+                    </div>
+                    <div class="card-own-btn">
+                        <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                            CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="card-own">
+                    <div class="card-image">
+                        <img class="img-fluid" src="../images/dinnerset/porcelain75pcs/porcelain2.jpg" alt="">
+                    </div>
+                    <div class="card-own-title">
+                        <span>NEW BONE CHINA</span><br>
+                        <span> Article no.08 <br>Price: Rs2000</span>
+                    </div>
+                    <div class="card-own-btn">
+                        <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                            CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="card-own">
+                    <div class="card-image">
+                        <img class="img-fluid" src="../images/dinnerset/porcelain75pcs/porcelain3.jpg" alt="">
+                    </div>
+                    <div class="card-own-title">
+                        <span>NEW BONE CHINA</span><br>
+                        <span> Article no.09 <br>Price: Rs2000</span>
+                    </div>
+                    <div class="card-own-btn">
+                        <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                            CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="card-own">
+                    <div class="card-image">
+                        <img class="img-fluid" src="../images/dinnerset/porcelain75pcs/porcelain4.jpg" alt="">
+                    </div>
+                    <div class="card-own-title">
+                        <span>NEW BONE CHINA</span><br>
+                        <span> Article no.10 <br>Price: Rs2000</span>
+                    </div>
+                    <div class="card-own-btn">
+                        <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                            CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </a>
+            </div>
+        </div>
+    </div>
+    <div class="container new-bone-china">
+        <div class="row">
+         
+            <div class="col productcol">
+                <div class="productheading">
+                    <a>
+                        <h3>BONE CHINA</h3>
+                    </a>
+                </div>
+                <div class="shopmore">
+                    <a> Shop more &nbsp;<i class="fa fa-shopping-cart" style="color: rgb(87, 24, 69);"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid " >
+        <div class="card-wrapper row" style="text-align: center;">
+            <div>
+            <a>
+                <div class="card-own">
+                    <div class="card-image">
+                        <img class="img-fluid" src="../images/dinnerset/Bonechina61pcs/bonechina1.jpg" alt="">
+                    </div>
+                    <div class="card-own-title">
+                        <span>NEW BONE CHINA</span><br>
+                        <span> Article no.01 <br>Price: Rs2000</span>
+                    </div>
+                    <div class="card-own-btn">
+                        <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                            CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="card-own">
+                    <div class="card-image">
+                        <img class="img-fluid" src="../images/dinnerset/Bonechina61pcs/bonechina2.jpg" alt="">
+                    </div>
+                    <div class="card-own-title">
+                        <span>NEW BONE CHINA</span><br>
+                        <span> Article no.02 <br>Price: Rs2000</span>
+                    </div>
+                    <div class="card-own-btn">
+                        <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                            CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="card-own">
+                    <div class="card-image">
+                        <img class="img-fluid" src="../images/dinnerset/Bonechina61pcs/bonechina3.jpg" alt="">
+                    </div>
+                    <div class="card-own-title">
+                        <span>NEW BONE CHINA</span><br>
+                        <span> Article no.03 <br>Price: Rs2000</span>
+                    </div>
+                    <div class="card-own-btn">
+                        <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                            CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="card-own">
+                    <div class="card-image">
+                        <img class="img-fluid" src="../images/dinnerset/Bonechina61pcs/bonechina4.jpg" alt="">
+                    </div>
+                    <div class="card-own-title">
+                        <span>NEW BONE CHINA</span><br>
+                        <span> Article no.04 <br>Price: Rs2000</span>
+                    </div>
+                    <div class="card-own-btn">
+                        <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                            CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="card-own">
+                    <div class="card-image">
+                        <img class="img-fluid" src="../images/dinnerset/Bonechina61pcs/bonechina5.jpg" alt="">
+                    </div>
+                    <div class="card-own-title">
+                        <span>NEW BONE CHINA</span><br>
+                        <span> Article no.05 <br>Price: Rs2000</span>
+                    </div>
+                    <div class="card-own-btn">
+                        <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                            CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="card-own">
+                    <div class="card-image">
+                        <img class="img-fluid" src="../images/dinnerset/Bonechina61pcs/bonechina6.jpg" alt="">
+                    </div>
+                    <div class="card-own-title">
+                        <span>NEW BONE CHINA</span><br>
+                        <span> Article no.06 <br>Price: Rs2000</span>
+                    </div>
+                    <div class="card-own-btn">
+                        <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                            CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="card-own">
+                    <div class="card-image">
+                        <img class="img-fluid" src="../images/dinnerset/Bonechina61pcs/bonechina7.jpg" alt="">
+                    </div>
+                    <div class="card-own-title">
+                        <span>NEW BONE CHINA</span><br>
+                        <span> Article no.07 <br>Price: Rs2000</span>
+                    </div>
+                    <div class="card-own-btn">
+                        <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                            CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="card-own">
+                    <div class="card-image">
+                        <img class="img-fluid" src="../images/dinnerset/Bonechina61pcs/bonechina4.jpg" alt="">
+                    </div>
+                    <div class="card-own-title">
+                        <span>NEW BONE CHINA</span><br>
+                        <span> Article no.08 <br>Price: Rs2000</span>
+                    </div>
+                    <div class="card-own-btn">
+                        <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                            CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="card-own">
+                    <div class="card-image">
+                        <img class="img-fluid" src="../images/dinnerset/Bonechina61pcs/bonechina1.jpg" alt="">
+                    </div>
+                    <div class="card-own-title">
+                        <span>NEW BONE CHINA</span><br>
+                        <span> Article no.09 <br>Price: Rs2000</span>
+                    </div>
+                    <div class="card-own-btn">
+                        <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                            CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="card-own">
+                    <div class="card-image">
+                        <img class="img-fluid" src="../images/dinnerset/Bonechina61pcs/bonechina2.jpg" alt="">
+                    </div>
+                    <div class="card-own-title">
+                        <span>NEW BONE CHINA</span><br>
+                        <span> Article no.10 <br>Price: Rs2000</span>
+                    </div>
+                    <div class="card-own-btn">
+                        <a class="heart"><i class="fa fa-heart"></i></a> <a href="#" class="btn ">ADD TO
+                            CART</a> <a class="cart"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </a>
+            </div>
+        </div>
+    </div>
+<!-- foooter start -->
+<div class="container-fluid footer">
+
+    <div class="row footer-row">
+        <div class="col-md-4">
+            <div class="footer-logo">
+                <img class="img-fluid" src="../images/logo2.png" width="400px" height="250px">
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="row ">
+                <div class="col-md-6 payment-col">
+                    <div style="padding-bottom: 15px;">
+                        <h4>Payment Options</h4>
+                    </div>
+                    <div>
+                        <ul class="payment-ul">
+                            <li>Cash on Delivery</li>
+                            <li>Bankb Transfer</li>
+                            <li>Card Payments</li>
+                            <li>EasyPaisa Mobile Account</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 links-col">
+                    <div style="padding-bottom: 15px;">
+                        <h4> Follow us</h4>
+                    </div>
+                    <div>
+                        <ul class="ul1">
+                            <li><a class="links" id="fb"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="links"><i class="fa fa-twitter"></i></a></li>
+                            <li><a class="links"><i class="fa fa-instagram"></i></a></li>
+                            <li><a class="links"><i class="fa fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 about-col">
+                    <div style="margin-top: 10px;margin-bottom: 15px;">
+                        <h4> About us</h4>
+                    </div>
+                    <div>
+                        <ul class="about-ul">
+                            <li><a>Careers</a></li>
+                            <li><a>Terms & Conditions</a></li>
+                            <li><a>Privacy agreement</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 customerservice-col">
+                    <div style="margin-top: 10px;margin-bottom: 15px;">
+                        <h4>Customer Service</h4>
+                    </div>
+                    <div>
+                        <ul class="customerservice-ul">
+                            <li><a>Contact us</a></li>
+                            <li><a>Refund policy</a></li>
+                            <li><a>Return policy</a></li>
+                            <li><a>Warranty policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row end-row">
+        <h6>&copy;2020 PORSACHI</h6></br>
+        <h6>All Rights Reserved</h6>
+    </div>
+</div>
+
+</div>
+
+</div>
+
+
+
+
+<!-- foooter end -->
+
+
+
+<script>
+    var loader = document.getElementById('preloader');
+    function myfunction(){
+        loader.style.display ='none';
+    }
+</script>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

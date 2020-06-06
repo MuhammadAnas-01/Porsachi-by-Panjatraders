@@ -1,0 +1,201 @@
+ /* navigator */
+
+ .navigator{
+   border-bottom: 2px solid rgb(87, 24, 69);
+     padding: 6px 5px;
+ }
+ .navigator span a {
+color: rgb(87, 24, 69);    
+font-weight: bold;
+}
+.navigator span i {
+    color: rgb(87, 24, 69);    
+    font-weight: bold;
+    }
+.navigator span{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.navigator span a:hover{
+    color: rgb(144, 12, 62);
+}
+/* navigator end */
+
+/* categories start */
+
+.head-categ , .comment-head {
+    font-size: large;
+    font-family: 'Acme', sans-serif;
+    font-weight: normal;
+    color: rgb(87, 24, 69);
+}
+.head-categ:after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    display: block;
+    background-color: grey;
+}
+.parts-categ{
+    margin-top: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    background-color: rgba(211, 211, 211, 0.5);
+    color: rgb(87, 24, 69);
+    cursor: pointer;
+
+}
+.comment-section{
+    background-color: rgba(211, 211, 211, 0.5);
+    color: rgb(144, 12, 62);
+    padding-left: 5px;
+    letter-spacing: 0px;
+}
+@media(max-width:767px){
+.comment-section , .comment-head{
+    display: none;
+}
+}
+/* categories end  */
+
+
+ /* main images start  */
+.gallery-dinner-main-2{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-auto-rows: 210px 310px;
+grid-gap: 0px;
+grid-auto-flow: dense;
+
+z-index: 1;
+background-color: white;
+}
+.Main-images{
+   position: relative;
+   background-color: white;
+   z-index: 1;
+}
+
+.gallery-items-2{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.gallery-items-2 .image-2{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.gallery-items-2 .image-2 img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+   
+    object-position: 50% 50%;
+    transition: .5s ease-in-out;
+}
+.gallery-items-2 .opt-2{
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size:25px;
+    z-index: 4;
+    transition: .3s ease-in-out;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.5)
+}
+.opt-2 a{
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.opt-2 a:hover{
+    transform: scale(1.2);
+}
+@media(max-width:576px){
+.gallery-dinner-main-2{
+    display: block;
+
+}
+.gallery-items-2 .image-2{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+.image-2 img{
+    height:100px;
+}
+
+}
+ /* main images end  */
+
+ /* NEW BONE CHINA START  */
+.new-bone-china{
+    margin-top: 20px;
+}
+.card-wrapper{
+    margin-top: 15px;
+}
+.card-own{
+    width: 280px;
+border-bottom: 1px solid lightgrey;
+display: inline-block;
+text-align: center;
+transition: 0.5s ease-in-out;
+overflow: hidden;
+padding:8px;
+background-color: rgba(211, 211, 211, 0.5);
+}
+.card-image{
+    height: 180px;
+    background-color: rgba(211, 211, 211, 0.5);
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+.card-image img{
+    height: 100%;
+    transition: 0.5s ease-in-out;
+}
+.card-own-btn .fa-heart , .card-own-btn .fa-shopping-cart {
+    color: rgb(144, 12, 62);
+}
+.card-own-btn , .card-own-title{
+    margin-top: px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.card-own-btn{
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.card-own:hover .card-own-btn{
+opacity: 1;
+}
+.card-own:hover{
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.card-own:hover .card-image img{
+    transform: scale(1.2);
+}
+.card-own-title{
+    font-family: 'Acme', sans-serif;
+}
+@media(max-width:767px){
+    .card-own{
+        width: 100%;
+    }
+} 
+@media(max-width:1024px){
+    .card-own{
+        width: 240px;
+    }
+}
+
+
+ /* NEW BONE CHINA END   */
